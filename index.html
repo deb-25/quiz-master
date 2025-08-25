@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Master</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="subject-selection">
+      <h1>Be a quiz expert</h1>
+
+      <select id="subject-dropdown">
+        <option value="">Select Subject</option>
+        <option value="physics">Physics</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="maths">Maths</option>
+        <option value="digital and analog">Digital and Analog</option>
+        <option value="technology">Technology</option>
+      </select>
+
+      <select id="level-dropdown">
+        <option value="">Select Level</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+      <p class="timer"><strong>Total Time Left:</strong> <span id="total-time-left">30</span>s</p>
+      <h2 id="question"></h2>
+      <ul id="options"></ul>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <div id="result-container" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <div id="score-list"></div>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
